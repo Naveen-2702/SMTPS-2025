@@ -25,7 +25,7 @@ def login():
         tokens[token] = {'email': email, 'expiry': expiry}
 
         # Create verification link
-        link = f"http://smtps-2025.onrender.com/verify/{token}"
+        link = f"https://smtps-2025.onrender.com/verify/{token}"
 
         # Send email
         send_email(email, link)
